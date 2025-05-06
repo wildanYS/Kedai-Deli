@@ -1,0 +1,214 @@
+/* Global style */
+:root {
+  --primary-color: #f6e2c5;
+  --secondary-color: #fd940cae;
+  --text-color: hsl(0, 0%, 20%);
+  --white: #fff;
+  --dark-brown: rgb(101, 77, 36);
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  top: 0;
+  z-index: 10;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav .nav {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav:hover {
+  color: orange;
+}
+
+.nav-2 {
+  color: black;
+  text-decoration: none;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.content-dropdown {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 150px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+}
+
+.content-dropdown li {
+  border-bottom: 1px solid #eee;
+}
+
+.content-dropdown li a {
+  display: block;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+.content-dropdown li a:hover {
+  background-color: #f2f2f2;
+}
+
+.show-dropdown {
+  display: block;
+}
+
+
+
+h1 {
+  color: black;
+  font-size: 22px;
+  font-weight: 800;
+  font-family: sans-serif;
+  font-style: normal;
+}
+
+/*garis*/
+hr {
+height: 1px;
+border: none;        
+background-color: rgb(101, 77, 36);
+margin: 0;  
+}
+
+/*Paragraft & teks*/
+h1 {
+  color: black;
+  font-size: 22px;
+  font-weight: 800;
+  font-family: sans-serif;
+  font-style: normal;
+}
+
+/*container*/
+.container-alamat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+/*card*/
+.card-alamat {
+  background-color: white;
+  text-align: center;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 2rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+
+.card-gambar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.card-text {
+  padding: 0;
+  margin: 0;
+}
+
+.card-lokasi {
+  margin: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*paragraft*/
+.paragraft-1 {
+  font-size: 18px;
+  margin: 0;
+  color: black;
+}
+
+/*gambar*/
+.gambar-1 {
+  width: 1000px;
+  height: 500px;
+  border-radius: 5px;
+}
+
+.nav-3 {
+  background-color: orange;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  flex-wrap: wrap;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-3:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .alamat-container {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .gambar-1 {
+    width: 300px;
+    height: auto;
+  }
+
+  h2, p {
+    text-align: center;
+  }
+}
