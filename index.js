@@ -44,3 +44,40 @@
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".animasi-muncul");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("muncul");
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  elements.forEach(el => {
+    observer.observe(el);
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".animasi-muncul1");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("muncul");
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  elements.forEach(el => {
+    observer.observe(el);
+  });
+});
